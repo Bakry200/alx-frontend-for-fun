@@ -1,0 +1,27 @@
+/* Grid Section */
+.row {
+    display: flex; /* Now, all children from the row class are flex items */
+}
+
+/* Remove the row::after declaration */
+.row::after {
+    /* This entire block is removed */
+}
+
+/* Remove the float: left inside [class*='col-'] */
+[class*='col-'] {
+    /* float: left; */
+    /* Other necessary styles should remain unchanged */
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Additional Styles for visualization */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.col-1, .col-2, .col-3 {
+    flex: 1;
+    margin: 5px;
+}
